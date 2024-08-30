@@ -39,6 +39,24 @@ git merge [branch]
 	merge the specified branch’s history into the current one
 git log
 	show all commits in the current branch’s history
+
+To checkout and switch to feature Branch
+	git checkout feature-branch-name
+To create feature branch and checkout and swith to feature branch
+	git checkout -b feature-branch-name origin/feature-branch-name
+	git checkout -b feature/AWSDATABASES-459 origin/feature-branch-name
+To know the current branch name
+	This command lists all branches and highlights the current branch with an asterisk (*)
+		git branch
+	This command provides more detailed information, including the current branch name:
+		git status
+	You can use this command to print the name of the current branch:
+To delete the local feature branch 
+	git checkout develop
+	git branch -D feature-branch-name
+
+		
+
 	
 INSPECT & COMPARE
 Examining logs, diffs and object information
