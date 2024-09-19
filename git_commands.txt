@@ -55,6 +55,13 @@ To delete the local feature branch
 	git checkout develop
 	git branch -D feature-branch-name
 
+To amend the commit message use git rebase
+	Type git rebase -i head ~ 
+	Specify how many commits you want to go back 
+	A list of commands will appear, including pick, reword, and edit 
+	Select edit for the commit message you want to change 
+	Make your changes and save them 
+
 		
 
 	
