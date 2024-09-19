@@ -1,0 +1,37 @@
+kubernet cheatsheet command
+
+Here’s a Kubernetes command cheatsheet for quick reference:
+
+### **Basic Commands**
+- **`kubectl get pods`** - List all pods.
+- **`kubectl get services`** - List all services.
+- **`kubectl get deployments`** - List all deployments.
+- **`kubectl get nodes`** - List all nodes.
+- **`kubectl describe pod <pod-name>`** - Describe a specific pod.
+- **`kubectl logs <pod-name>`** - View logs of a specific pod.
+
+### **Managing Pods**
+- **`kubectl create -f <file.yaml>`** - Create resources from a YAML file.
+- **`kubectl apply -f <file.yaml>`** - Apply changes to resources defined in a YAML file.
+- **`kubectl delete -f <file.yaml>`** - Delete resources defined in a YAML file.
+- **`kubectl exec -it <pod-name> -- /bin/sh`** - Access a shell in a running pod.
+- **`kubectl scale deployment <deployment-name> --replicas=<number>`** - Scale a deployment.
+
+### **Configuration and Secrets**
+- **`kubectl config view`** - View the kubeconfig settings.
+- **`kubectl create secret generic <secret-name> --from-literal=<key>=<value>`** - Create a secret.
+- **`kubectl get secrets`** - List all secrets.
+
+### **Namespaces and Contexts**
+- **`kubectl get namespaces`** - List all namespaces.
+- **`kubectl config use-context <context-name>`** - Switch to a different context.
+
+### **Troubleshooting**
+- **`kubectl get events`** - List recent events for debugging.
+- **`kubectl describe node <node-name>`** - Describe a specific node.
+
+### **Advanced Commands**
+- **`kubectl rollout status deployment/<deployment-name>`** - Check the status of a deployment rollout.
+- **`kubectl port-forward <pod-name> <local-port>:<pod-port>`** - Forward a port from a pod to your local machine.
+
+Keep this cheatsheet handy to streamline your Kubernetes management tasks!
