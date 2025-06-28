@@ -1,7 +1,14 @@
-| Command                            | Purpose                      |
-| ---------------------------------- | ---------------------------- |
-| `docker compose up -d`             | Start services in background |
-| `docker compose down`              | Stop and remove containers   |
-| `docker compose logs -f`           | View live logs               |
-| `docker compose ps`                | List running services        |
-| `docker compose restart wordpress` | Restart WordPress container  |
+| **Command**                         | **Description**                            |
+| ----------------------------------- | ------------------------------------------ |
+| `docker compose up`                 | Start services in foreground               |
+| `docker compose up -d`              | Start in detached (background) mode        |
+| `docker compose down`               | Stop and remove containers, networks, etc. |
+| `docker compose logs`               | View logs of all services                  |
+| `docker compose logs opencart`      | View logs of just the `opencart` container |
+| `docker compose ps`                 | See running containers                     |
+| `docker compose exec opencart bash` | Open terminal inside opencart container    |
+| `docker volume ls`                  | List Docker volumes                        |
+| `docker volume rm VOLUME_NAME`      | Remove unused volume                       |
+| `docker compose restart`            | Restart services                           |
+| `docker images`                     | List all images                            |
+| `docker rm -f $(docker ps -aq)`     | Remove all containers (be careful!)        |
