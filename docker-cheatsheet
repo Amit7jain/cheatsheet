@@ -11,4 +11,16 @@
 | `docker volume rm VOLUME_NAME`      | Remove unused volume                       |
 | `docker compose restart`            | Restart services                           |
 | `docker images`                     | List all images                            |
-| `docker rm -f $(docker ps -aq)`     | Remove all containers (be careful!)        |
+| `docker rm -f $(docker ps -aq)`     | stop Remove all containers (be careful!)   |
+
+
+
+
+===
+docker compose down --volumes --remove-orphans
+docker builder prune --all --force
+docker system prune --volumes --force
+
+docker compose up build --no-cache
+
+
