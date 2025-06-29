@@ -1,1 +1,14 @@
 icacls .\opencart /grant "Everyone:(OI)(CI)F" /T
+
+ netstat -aon | find ":8080" # List connections connected on port 8080
+
+:loop
+netstat -aon | find ":8080"
+timeout /t 5 /nobreak >nul
+goto loop
+
+
+==
+taskkill /PID 1234 /F
+
+
